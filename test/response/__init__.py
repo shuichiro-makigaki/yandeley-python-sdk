@@ -1,4 +1,4 @@
-from mendeley.response import LazyResponseObject, SessionResponseObject
+from yandeley.response import LazyResponseObject, SessionResponseObject
 
 
 class DummyResponseObject(SessionResponseObject):

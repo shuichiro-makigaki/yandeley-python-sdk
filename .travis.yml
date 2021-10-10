@@ -3,12 +3,12 @@ language: python
 sudo: false
 
 python:
-  - "2.7"
-  - "3.4"
+  - "3.8"
+  - "3.9"
 
 # Ignore tests we cannot run in the CI environment
 # such as those needing user access tokens.
-script: py.test --ignore=test/manual/
+script: pytest --ignore=test/manual/
 
 deploy:
   - provider: pypi

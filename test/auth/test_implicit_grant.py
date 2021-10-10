@@ -1,4 +1,4 @@
-from mendeley import Mendeley
+from yandeley import Mendeley
 from test import DummyStateGenerator
 
 

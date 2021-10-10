@@ -1,5 +1,5 @@
 import pytest
-from mendeley.exception import MendeleyApiException
+from yandeley.exception import MendeleyApiException
 from test import get_client_credentials_session, cassette
 from test.resources.catalog import assert_core_view, assert_all_view
 

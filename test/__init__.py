@@ -4,8 +4,8 @@ import vcr
 import yaml
 import os
 
-from mendeley import Mendeley
-from mendeley.session import MendeleySession
+from yandeley import Mendeley
+from yandeley.session import MendeleySession
 from test.yamlfileserializer import YamlFileSerializer
 
 

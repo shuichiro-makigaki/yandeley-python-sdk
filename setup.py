@@ -1,13 +1,13 @@
 from setuptools import setup
 
 __version__ = None
-with open('mendeley/version.py') as f:
+with open('yandeley/version.py') as f:
     exec(f.read())
 
 setup(
-    name='mendeley',
+    name='yandeley',
     version=__version__,
-    packages=['mendeley', 'mendeley.models', 'mendeley.resources'],
+    packages=['yandeley', 'yandeley.models', 'yandeley.resources'],
     url='http://dev.mendeley.com',
     license='Apache',
     author='Mendeley',
