@@ -1,3 +1,4 @@
+from pathlib import Path
 from setuptools import setup
 
 __version__ = None
@@ -8,11 +9,13 @@ setup(
     name='yandeley',
     version=__version__,
     packages=['yandeley', 'yandeley.models', 'yandeley.resources'],
-    url='http://dev.mendeley.com',
+    url='https://github.com/shuichiro-makigaki/yandeley-python-sdk',
     license='Apache',
-    author='Mendeley',
-    author_email='api@mendeley.com',
-    description='Python SDK for the Mendeley API',
+    author='Shuichiro MAKIGAKI',
+    author_email='shuichiro.makigaki@gmail.com',
+    description='(Yet Another) Python SDK for the Mendeley API',
+    long_description=Path('README.md').read_text(),
+    long_description_content_type='text/markdown',
 
     install_requires=[
         'arrow==0.5.0',
@@ -34,7 +37,6 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "Topic :: Scientific/Engineering",
         "Topic :: Software Development :: Libraries :: Python Modules"
