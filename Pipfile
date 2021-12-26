@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+arrow = "*"
+#contextlib2 = "*"
+future = "*"
+memoized-property = "*"
+#mock = "*"
+oauthlib = "*"
+#py = "*"
+#python-dateutil = "*"
+#requests = "*"
+requests-oauthlib = "*"
+#six = "*"
+vcrpy = "*"
+#wrapt = "*"
+
+[dev-packages]
+pytest = "*"
+twine = "*"
+PyYAML = "==5.4.1"
+
+[requires]
+python_version = "3.8"

@@ -59,6 +59,7 @@ class MendeleySession(OAuth2Session):
         self.documents = Documents(self, None)
         self.files = Files(self)
         self.groups = Groups(self)
+        self.groups_v2 = GroupsV2(self)
         self.profiles = Profiles(self)
         self.trash = Trash(self, None)
 

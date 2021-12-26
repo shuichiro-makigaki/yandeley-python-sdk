@@ -27,7 +27,8 @@ class MendeleyClientCredentialsAuthenticator(object):
     def authenticate(self):
         oauth = OAuth2Session(client=self.client, scope=['all'])
         oauth.compliance_hook['access_token_response'] = [handle_text_response]
-
+        print(self.auth.username)
+        print(self.auth.password)
         token = oauth.fetch_token(self.token_url, auth=self.auth, scope=['all'])
         return MendeleySession(self.mendeley,
                                token,
